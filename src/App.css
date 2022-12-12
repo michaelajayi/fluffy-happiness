@@ -1,31 +1,36 @@
-.App {
-  text-align: center;
+html,
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading-text {
+  font-family: sans-serif;
+  font-weight: 900;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.img-block {
+  width: 30rem;
+  height: 30rem;
+  overflow: hidden;
+  margin-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.img-block img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: all 0.5s;
 }
 
-.heart {
-  color: #ff0000;
+.img-block > img:hover {
+  transform: scale(1.1);
 }
 
-.small {
-  font-size: 0.75rem;
+h1 {
+  margin-left: 30px;
 }
